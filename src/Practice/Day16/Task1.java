@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        File file = new File("Practice.Day14.Task1.txt");
+        File file = new File("Practice.Day16.Task1.txt");
         try {
             printResult(file);
         } catch (FileNotFoundException e) {
@@ -28,6 +28,6 @@ public class Task1 {
         double avg = sumDigits / counter;
         input.close();
         System.out.println(Arrays.toString(numbersString));
-        System.out.println(avg);
+        System.out.printf("%.15f --> %.3f", avg, avg);
     }
 }
